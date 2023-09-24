@@ -7,17 +7,22 @@ import rigoImage from "../../img/rigo-baby.jpg";
 const Home = () => {
 	const [selectcolor, setSelectcolor] = useState("");
 
-	return (			
-		<div className="traffic-light">
-			<div 
-				onClick={() => setSelectcolor ("red")}
-				className={"light red" + (selectcolor == "red" ? " glow" : "")}></div>
-			<div 
-				onClick={ () => setSelectcolor ("yellow")}
-				className={"light yellow" + (selectcolor == "yellow" ? " glow" : "")}></div>
-			<div 
-				onClick={() => setSelectcolor ("green")}
-				className={"light green" + (selectcolor == "green" ? " glow" : "")}></div>
+	return (
+		<div>
+			<div className="poste">
+				A
+			</div>
+			<div className="traffic-light">
+				<div 
+					onClick={() => setSelectcolor ("red")}
+					className={"light red" + (selectcolor == "red" ? " glow" : "")}></div>
+				<div 
+					onClick={ () => setSelectcolor ("yellow")}
+					className={"light yellow" + (selectcolor == "yellow" ? " glow" : "")}></div>
+				<div 
+					onClick={() => setSelectcolor ("green")}
+					className={"light green" + (selectcolor == "green" ? " glow" : "")}></div>
+			</div>
 		</div>
 	);
 };

@@ -9,12 +9,21 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+#app{
+    display: flex;
+    justify-content: center;
+}
 
 .traffic-light{
     background: black;
     padding: 10px;
     display: inline-block;
-    margin: auto;
+}
+
+.poste{
+    background: black;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .light{
